@@ -1,15 +1,11 @@
 import React from 'react'
-import './code.css'
 
 export { Page }
 
 function Page() {
   return (
-    <>
+    <div className='text-white bg-black h-screen'>
       <h1>About</h1>
-      <p>
-        Example of using <code>vite-plugin-ssr</code>.
-      </p>
-    </>
+    </div>
   )
 }
