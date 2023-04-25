@@ -17,5 +17,3 @@ export const Page = ({ users }: { users: UserPageProps[] }) => {
         })}
     </ul>
 }
-
-// export const doNotPrerender = true;

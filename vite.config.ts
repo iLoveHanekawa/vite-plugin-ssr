@@ -5,11 +5,7 @@ import vercel from 'vite-plugin-vercel'
 import { UserConfig } from 'vite'
 
 const config: UserConfig = {
-  plugins: [react(), ssr({
-    prerender: {
-      partial: true
-    }
-  }), vercel(), vercelSsr()],
+  plugins: [react(), ssr(), vercel(), vercelSsr()],
   vercel: {
   }
 }
