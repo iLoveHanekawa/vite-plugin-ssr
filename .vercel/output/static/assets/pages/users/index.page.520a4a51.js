@@ -1,1 +1,0 @@
-import{j as e,a as l}from"../../chunks/chunk-0e184ced.js";const c=({users:i})=>e("ul",{children:i.map((r,n)=>l("li",{children:[e("p",{children:r.id}),e("p",{children:r.name}),e("p",{children:r.email})]},n))});export{c as Page};
