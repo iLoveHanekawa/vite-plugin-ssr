@@ -1,12 +1,12 @@
 import React from 'react'
 
-type PageProps = {
+export type UserPageProps = {
     id: number
     name: string
     email: string
 }
 
-export const Page = ({ users }: { users: PageProps[] }) => {
+export const Page = ({ users }: { users: UserPageProps[] }) => {
     return <ul>
         {users.map((props, index) => {
             return <li key = {index}>
@@ -17,3 +17,5 @@ export const Page = ({ users }: { users: PageProps[] }) => {
         })}
     </ul>
 }
+
+// export const doNotPrerender = true;
