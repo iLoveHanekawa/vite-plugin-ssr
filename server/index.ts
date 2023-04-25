@@ -1,6 +1,6 @@
 // Note that this file isn't processed by Vite, see https://github.com/brillout/vite-plugin-ssr/issues/562
 
-import express from 'express'
+import express, {Request, Response} from 'express'
 import compression from 'compression'
 import { renderPage } from 'vite-plugin-ssr/server'
 import { root } from './root.js'
@@ -26,6 +26,12 @@ async function startServer() {
     ).middlewares
     app.use(viteDevMiddleware)
   }
+
+  app.get('/api/greet', (req: Request, res: Response) => {
+    return res.json({
+      greeting: "Hello Arjun"
+    })
+  })
 
   app.get('*', async (req, res, next) => {
     const pageContextInit = {
