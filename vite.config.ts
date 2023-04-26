@@ -13,5 +13,8 @@ export default defineConfig(async ({ command, mode }) => {
     vercel: {
       // Tweak what you need, check TS definition for details
     },
+    server: {
+      port: 3000
+    }
   };
 });
