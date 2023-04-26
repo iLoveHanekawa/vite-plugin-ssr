@@ -1,3 +1,4 @@
+export const doNotPrerender = true;
 import { PageContext } from "../../renderer/types"
 import { UserPageProps } from "./index.page"
 
@@ -19,4 +20,3 @@ export const onBeforeRender = async (pageContext: PageContext) => {
     }
 }
 
-export const doNotPrerender = true;
