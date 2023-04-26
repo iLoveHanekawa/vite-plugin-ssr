@@ -1,4 +1,5 @@
 // Note that this file isn't processed by Vite, see https://github.com/brillout/vite-plugin-ssr/issues/562
+import './path/to/dist/server/importBuild.cjs'
 
 import express, {Request, Response} from 'express'
 import compression from 'compression'
