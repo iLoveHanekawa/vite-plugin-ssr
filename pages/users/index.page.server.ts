@@ -19,4 +19,4 @@ export const onBeforeRender = async (pageContext: PageContext) => {
     }
 }
 
-// export const doNotPrerender = true;
+export const doNotPrerender = true;
