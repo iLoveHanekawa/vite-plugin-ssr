@@ -11,6 +11,7 @@ const config: UserConfig = {
     }
   }), vercel(), vercelSsr()],
   vercel: {
+    additionalEndpoints: []
   }
 }
 
