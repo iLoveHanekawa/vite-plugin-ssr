@@ -1,7 +1,6 @@
-import { Request, Response } from 'express'
 import { renderPage } from 'vite-plugin-ssr'
 
-export default async function handler(req: Request, res: Response) {
+export default async function handler(req, res) {
   const { url } = req
   console.log('Request to url:', url)
 
