@@ -1,22 +1,17 @@
-import react from '@vitejs/plugin-react'
-import ssr from 'vite-plugin-ssr/plugin'
-import vercelSsr from '@magne4000/vite-plugin-vercel-ssr'
-import vercel from 'vite-plugin-vercel'
-import { UserConfig } from 'vite'
+import { defineConfig } from 'vite';
+import ssr from 'vite-plugin-ssr/plugin';
+import vercel from 'vite-plugin-vercel';
+import vercelSsr from '@magne4000/vite-plugin-vercel-ssr';
 
-const config: UserConfig = {
-  plugins: [react(), ssr({
-    prerender: {
-      partial: true
-    }
-  }), 
-
-  vercelSsr(),
-  vercel()
-],
-  // vercel: {
-  //   additionalEndpoints: []
-  // }
-}
-
-export default config
+export default defineConfig(async ({ command, mode }) => {
+  return {
+    plugins: [ssr({
+      prerender: {
+        partial: true
+      }
+    }), vercel(), vercelSsr()],
+    vercel: {
+      // Tweak what you need, check TS definition for details
+    },
+  };
+});
