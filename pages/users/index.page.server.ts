@@ -1,4 +1,3 @@
-export const doNotPrerender = true;
 import { PageContext } from "../../renderer/types"
 import { UserPageProps } from "./index.page"
 import fetch from 'node-fetch'
@@ -20,3 +19,5 @@ export async function onBeforeRender(pageContext: PageContext) {
         }
     }
 }
+
+// export const doNotPrerender = true;
