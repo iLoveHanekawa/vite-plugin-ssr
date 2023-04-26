@@ -6,9 +6,9 @@ import { UserConfig } from 'vite'
 
 const config: UserConfig = {
   plugins: [react(), ssr({
-    // prerender: {
-    //   partial: true
-    // }
+    prerender: {
+      partial: true
+    }
   }), vercel(), vercelSsr()],
   vercel: {
   }
