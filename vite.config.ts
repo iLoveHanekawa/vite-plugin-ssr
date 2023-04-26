@@ -9,10 +9,12 @@ const config: UserConfig = {
     prerender: {
       partial: true
     }
-  }), vercel(), vercelSsr()],
-  vercel: {
-    additionalEndpoints: []
-  }
+  }), vercel(), 
+  // vercelSsr()
+],
+  // vercel: {
+  //   additionalEndpoints: []
+  // }
 }
 
 export default config
