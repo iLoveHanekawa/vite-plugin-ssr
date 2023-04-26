@@ -21,3 +21,5 @@ export async function onBeforeRender(pageContext: PageContext) {
 }
 
 // export const doNotPrerender = true;
+
+// 4.7 fa version
