@@ -9,8 +9,9 @@ const config: UserConfig = {
     prerender: {
       partial: true
     }
-  }), vercel(), 
-  // vercelSsr()
+  }), 
+
+  vercelSsr()
 ],
   // vercel: {
   //   additionalEndpoints: []
