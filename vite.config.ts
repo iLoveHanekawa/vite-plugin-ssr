@@ -12,7 +12,7 @@ export default defineConfig(async ({ command, mode }) => {
       }
     }), vercel(), vercelSsr()],
     vercel: {
-      // expiration: 25
+      expiration: 25
     },
     server: {
       port: 3000
